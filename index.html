@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <input type="range" value="0" min="0" max="100" step="1" class="bar">
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <img src="#" class="weather-icon owf"></img>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <div class="main-container">
+      <div class="time-container">
+        <time class="time"></time>
+        <date class="date"></date>
+      </div>
+      <div class="greeting-container">
+        <span class="greeting"></span>
+        <input type="textarea" class="name" placeholder="enter name" />
+      </div>
+    </div>
+   
+  </main>
+  <footer class="footer">
+      <button class="change-quote"></button>
+      <div class="block_qoutes">
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+      <div class="settings">
+        <button class="settings_btn"></button>
+        <div class="settings_block hidden">
+          <div class="settings_content">
+            <div class="language">
+              <p>Language:</p>
+              <form class="language_options">
+                
+                <label for="UA" lang="ua"><input type="radio" id="UA" name="lang" value="ua" checked >UA</label>
+                
+                <label for="EN" lang="en"><input type="radio" id="EN" name="lang" value="en" checked>EN</label>
+                
+                <label for="RU" lang="ru"><input type="radio" id="RU" name="lang" value="ru" checked>RU</label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toDo">
+        <span class="toDo-btn"></span>
+        <div class="toDo-box hidden">
+          <div class=" toDo-content">
+            <p>ToDo list</p>
+            <div class="enter_item">
+              <input type="text" id="field" name="lang" placeholder="Enter your item">
+              <button class="submit">Add</button>
+            </div>
+            <ul class="toDo-list">
+              <!-- <li class="item">to buy this <img class="delete" src="assets/svg/delete.png"></li> -->
+
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+    <div><img class="rs" src="assets/svg/rs.png"></div>
+  </footer>
+
+  <script type="module" src="playList.js"></script>
+
+  <script type="text/javascript" src="data.json"></script>
+  
+  <script type="module" src="index.js"></script>
+  
+</body>
+</html>
